@@ -14,6 +14,7 @@ app.use(express.static(clientPath));
 const server = http.createServer(app);
 
 const io = socketio(server);
+const PORT = process.env.PORT || 5000;
 
 let waitingPlayer = null;
 
@@ -37,5 +38,5 @@ server.on('error', (err) => {
 });
 
 server.listen(8080, () => {
-  console.log('RPS started on 8080');
+  console.log('RPS started on ' + PORT);
 });

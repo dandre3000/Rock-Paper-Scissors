@@ -1,0 +1,32 @@
+{
+  "name": "rps123",
+  "version": "1.0.0",
+  "description": "Rock aper scissors with chat",
+  "engines": {
+    "node": "11.5.0"
+  },
+  "main": "server/server.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandre3000/Rock-Paper-Scissors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dandre3000/Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/dandre3000/Rock-Paper-Scissors#readme"
+}
